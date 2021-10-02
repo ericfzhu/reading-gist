@@ -1,0 +1,26 @@
+{
+  "name": "book",
+  "version": "0.1.0",
+  "description": "Updates a reading list gist to show currently reading books on Notion",
+  "main": "index.ts",
+  "engines": {
+    "node": "12.x"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": ""
+  },
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "@notionhq/client": "^0.4.0"
+  },
+  "author": "Eric Zhu",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^16.10.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericfzhu/book"
+  }
+}
