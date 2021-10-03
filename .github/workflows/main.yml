@@ -17,9 +17,9 @@ jobs:
           node-version: '12.x'
       - run: npm ci
       - name: update-gist
+        uses: ericfzhu/book-box@master
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASEID: ${{ secrets.NOTION_DATABASEID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
-        run: ts-node src/index.ts
