@@ -1,4 +1,5 @@
 name: Update gist
+
 on:
   workflow_dispatch:
   push:
@@ -14,13 +15,6 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
-      - uses: actions/cache@v2
-        with:
-          path: ~/.npm
-          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.OS }}-node-
-            ${{ runner.OS }}-
       - run: npm ci
       - name: update-gist
         env:
