@@ -11,8 +11,9 @@
     "start": ""
   },
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "@notionhq/client": "^0.4.0"
+    "@notionhq/client": "^0.4.0",
+    "@octokit/core": "^3.5.1",
+    "dotenv": "^10.0.0"
   },
   "author": "Eric Zhu",
   "license": "MIT",

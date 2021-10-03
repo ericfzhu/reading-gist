@@ -1,5 +1,5 @@
 const dotenv = require("dotenv");
-const { Octokit } = require("@octokit/rest");
+const { Octokit } = require("@octokit/core");
 
 dotenv.config();
 
