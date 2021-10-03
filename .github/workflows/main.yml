@@ -25,4 +25,4 @@ jobs:
           NOTION_DATABASEID: ${{ secrets.NOTION_DATABASEID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
-        run: deno run --allow-net --allow-env index.ts
+        run: deno run --allow-net --allow-env src/index.ts
