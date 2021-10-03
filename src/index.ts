@@ -11,36 +11,8 @@ const databaseId = process.env.NOTION_DATABASEID
 const MAX_LEN = 54;
 const MAX_LINES = 5;
 
-// (async() => {
-//     const response = notion.databases.query({
-//         database_id: databaseId,
-//         filter: {
-//             or: [
-//                 {
-//                     property: 'Status',
-//                     select: {
-//                         equals: "Reading",
-//                     },
-//                 },
-//             ],
-//         },
-//         sorts: [
-//             {
-//                 property: 'Progress',
-//                 direction: 'descending',
-//             },
-//         ],
-//     });
-//     const books = response.results.map((page) => {
-//         return {
-//             name: page.properties.Name.title[0].text.content,
-//         };
-//     });
-//     console.log(books);
-// })();
-
-async function getBooks() {
-    const response = notion.databases.query({
+async function getBooks(): Promise<Book[]> {
+    const response = await notion.databases.query({
         database_id: databaseId,
         filter: {
             or: [
@@ -59,19 +31,15 @@ async function getBooks() {
             },
         ],
     });
-
-    if (response.results) {
-        return response.results.map((page: any) => {
-            return {
-                title: page.properties.Name.title[0].text.content,
-                percent: page.properties.Progress.number,
-            };
-        });
-    }
-
+    return response.results.map((page: any) => {
+        return {
+            title: page.properties.Name.title[0].text.content,
+            percent: page.properties.Progress.number,
+        };
+    })
 }
 
-function generateLines(books: any) {
+function generateLines(books: Book[]) {
     const barWidth = Math.floor(MAX_LEN / 4);
     return books.slice(0, MAX_LINES).map(({title, percent}: { title: string, percent: number }) => {
         const bar = generateBarChart(percent, barWidth);
@@ -96,6 +64,7 @@ function generateLines(books: any) {
             `📚 Currently reading books (${lines.length}／${books.length})`,
             lines.join('\n')
         );
+
         console.log(`Updated: ${url}`);
     } catch (error) {
         console.error(error);

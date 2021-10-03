@@ -10,16 +10,18 @@ export async function updateGist(
     content: string
 ): Promise<string> {
     const gist_id = process.env.GIST_ID || '';
-    const gist = await octokit.gists.get({ gist_id });
+    const gist = await octokit.request('GET /gists/{gist_id}', {
+        gist_id: gist_id
+    })
     const filename = Object.keys(gist.data.files)[0];
-    await octokit.gists.update({
-        gist_id,
+    await octokit.request('PATCH /gists/{gist_id}', {
+        gist_id: gist_id,
         files: {
             [filename]: {
                 filename: title,
-                content,
-            },
-        },
-    });
+                content
+            }
+        }
+    })
     return gist.url;
 }
