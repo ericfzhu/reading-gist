@@ -13,16 +13,11 @@ jobs:
     steps:
       - name: "Checkout"
         uses: actions/checkout@master
-      
-      - name: "Setup Deno"
-        uses: denoland/setup-deno@v1
-        with:
-          deno-version: v1.x
-          
+            
       - name: "Update gist"
+        uses: ericfzhu/book-box@master
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASEID: ${{ secrets.NOTION_DATABASEID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
-        run: deno run --allow-net --allow-env src/index.ts
