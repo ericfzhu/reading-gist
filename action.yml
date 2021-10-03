@@ -1,0 +1,6 @@
+name: "book-box"
+author: "Eric Zhu"
+description: "📚 Updates a reading list gist to show currently reading books on Notion"
+runs:
+  using: "node12"
+  main: "dist/index.js"
