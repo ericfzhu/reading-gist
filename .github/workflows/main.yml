@@ -16,10 +16,10 @@ jobs:
         with:
           node-version: '12.x'
       - run: npm ci
-      - name: update-gist
-        uses: ericfzhu/book-box@master
+      - name: "Update gist"
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
           NOTION_DATABASEID: ${{ secrets.NOTION_DATABASEID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
+        run: deno run --allow-net --allow-env index.ts
