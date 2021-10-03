@@ -36,4 +36,4 @@ This project requires your Notion workspace to be a database, and contain a colu
 
 
 ### Background
-The nature of this project may seem fairly manual, that's due to the fact that Goodreads is no longer issuing new API tokens and I wanted a way to showcase what I'm currently reading
+If you're wondering why this project seems oddly manual, that's due to the fact that Goodreads is no longer issuing new API tokens and I wanted a way to showcase what I'm currently reading. 😔
