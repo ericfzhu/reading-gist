@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@master
-      - uses: actions/setup-node@v1
+      - uses: actions/setup-node@v2
         with:
           node-version: '12.x'
       - run: npm ci
@@ -22,4 +22,4 @@ jobs:
           NOTION_DATABASEID: ${{ secrets.NOTION_DATABASEID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
-        run: npm start
+        run: ts-node src/index.ts
