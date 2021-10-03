@@ -1,6 +1,6 @@
 {
   "name": "book",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Updates a reading list gist to show currently reading books on Notion",
   "main": "index.ts",
   "engines": {
@@ -8,7 +8,8 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node --files src/index.ts"
+    "start": "ts-node --files src/index.ts",
+    "start:debug": "node --inspect-brk -r ts-node/register src/index.ts"
   },
   "dependencies": {
     "@notionhq/client": "^0.4.0",
