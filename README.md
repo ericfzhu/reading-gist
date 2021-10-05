@@ -12,6 +12,9 @@
     <a href="https://github.com/makenotion/notion-sdk-js">
         <img src="https://img.shields.io/badge/-Notion%20SDK-000000?logo=notion&style=flat" alt="Notion.so">
     </a>
+    <a href="https://prettier.io/">
+        <img src="https://img.shields.io/badge/-Prettier-1A2B34?logo=prettier&style=flat" alt="Prettier.io">
+    </a>  
 </p>
 
 <h4 align="center">
@@ -30,10 +33,10 @@
 5. Go to Actions and press `Enable`
 6. Pin your new Gist to your profile!
 
-
 ## Usage
-This project requires your Notion workspace to be a database, and contain a column called `Name` for the title of the book and a column called `Progress` for the current percentage progress in the book. 
 
+This project requires your Notion workspace to be a database, and contain a column called `Name` for the title of the book and a column called `Progress` for the current percentage progress in the book.
 
 ### Background
+
 If you're wondering why this project seems oddly manual, that's due to the fact that Goodreads is no longer issuing new API tokens and I wanted a way to showcase what I'm currently reading. 😔

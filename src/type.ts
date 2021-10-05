@@ -1,5 +1,5 @@
 // @ts-ignore
 interface Book {
-    title: string;
-    percent: number;
+  title: string;
+  percent: number;
 }

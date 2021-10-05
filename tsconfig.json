@@ -1,9 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "esnext"
-    ],
+    "lib": ["esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -16,9 +14,7 @@
     "isolatedModules": true,
     "noEmit": true
   },
-  "include": [
-    "src"
-  ],
+  "include": ["src"],
   "ts-node": {
     "files": true
   }
