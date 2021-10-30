@@ -1,5 +1,5 @@
 <h1 align="center">
-  📚 Book Box
+   <img src="https://raw.githubusercontent.com/ericfzhu/notion-book-box/master/assets/banner.jpg" alt="Notion Book Box"/>
   <br>
 </h1>
 
