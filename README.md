@@ -1,7 +1,4 @@
-<h1 align="center">
-   <img src="https://raw.githubusercontent.com/ericfzhu/notion-book-box/master/assets/banner.png" alt="Notion Book Box"/>
-  <br>
-</h1>
+![Notion Book Box](assets/banner.png)
 
 <h3 align="center">Updates a reading list gist to show currently reading books on Notion</h3>
 
