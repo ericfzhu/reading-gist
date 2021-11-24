@@ -3,8 +3,8 @@
 <h3 align="center">Updates a reading list gist to show currently reading books on Notion</h3>
 
 <p align="center">
-    <a href="https://www.typescriptlang.org/">
-        <img src="https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat" alt="Typescript"/>
+    <a href="https://www.javascript.com/">
+        <img src="https://img.shields.io/badge/-JavaScript-323330?logo=javascript&logoColor=F7DF1E&style=flat" alt="JavaScript"/>
     </a>
     <a href="https://github.com/makenotion/notion-sdk-js">
         <img src="https://img.shields.io/badge/-Notion%20SDK-000000?logo=notion&style=flat" alt="Notion.so">
@@ -37,3 +37,7 @@ This project requires your Notion workspace to be a database, and contain a colu
 ### Background
 
 If you're wondering why this project seems oddly manual, that's due to the fact that Goodreads is no longer issuing new API tokens and I wanted a way to showcase what I'm currently reading. 😔
+
+### Reading list
+
+You can check out my full reading list on Notion [here](https://ericfzhu.notion.site/12896e3b2c4141ca83ed2993432f9750?v=b37d0e3251974a59ae40bb7b84d2cc71)!
