@@ -2,9 +2,6 @@ name: Update gist
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
   schedule:
     - cron: "0 18 * * *" # Runs every 8 hours
 jobs:
