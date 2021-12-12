@@ -23,9 +23,11 @@
 1. Create a new public [Gist](https://gist.github.com/)
 2. Create a [personal access token](https://github.com/settings/tokens/new) with the `gist` scope
 3. Clone this repo
+
 ```bash
 git clone https://github.com/ericfzhu/reading.git
 ```
+
 4. Go to Settings > Settings and add the following values:
    1. `GH_TOKEN`: The personal access token you just created
    2. `GIST_ID`: The id of your gist url (`https://gist.github.com/ericfzhu/**f250c8f66128ae70883a031b8dbca982**`)
