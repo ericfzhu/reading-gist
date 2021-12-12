@@ -24,7 +24,7 @@
 2. Create a [personal access token](https://github.com/settings/tokens/new) with the `gist` scope
 3. Clone this repo
 ```bash
-git clone https://github.com/ericfzhu/notion-book-box.git
+git clone https://github.com/ericfzhu/reading.git
 ```
 4. Go to Settings > Settings and add the following values:
    1. `GH_TOKEN`: The personal access token you just created
