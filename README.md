@@ -1,13 +1,10 @@
-<h1 align="center">
-   <img src="https://raw.githubusercontent.com/ericfzhu/notion-book-box/master/assets/banner.png" alt="Notion Book Box"/>
-  <br>
-</h1>
+![Notion Book Box](assets/banner.png)
 
 <h3 align="center">Updates a reading list gist to show currently reading books on Notion</h3>
 
 <p align="center">
-    <a href="https://www.typescriptlang.org/">
-        <img src="https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white&style=flat" alt="Typescript"/>
+    <a href="https://www.javascript.com/">
+        <img src="https://img.shields.io/badge/-JavaScript-323330?logo=javascript&logoColor=F7DF1E&style=flat" alt="JavaScript"/>
     </a>
     <a href="https://github.com/makenotion/notion-sdk-js">
         <img src="https://img.shields.io/badge/-Notion%20SDK-000000?logo=notion&style=flat" alt="Notion.so">
@@ -25,7 +22,12 @@
 
 1. Create a new public [Gist](https://gist.github.com/)
 2. Create a [personal access token](https://github.com/settings/tokens/new) with the `gist` scope
-3. Fork this repo
+3. Clone this repo
+
+```bash
+git clone https://github.com/ericfzhu/reading.git
+```
+
 4. Go to Settings > Settings and add the following values:
    1. `GH_TOKEN`: The personal access token you just created
    2. `GIST_ID`: The id of your gist url (`https://gist.github.com/ericfzhu/**f250c8f66128ae70883a031b8dbca982**`)
@@ -40,3 +42,7 @@ This project requires your Notion workspace to be a database, and contain a colu
 ### Background
 
 If you're wondering why this project seems oddly manual, that's due to the fact that Goodreads is no longer issuing new API tokens and I wanted a way to showcase what I'm currently reading. 😔
+
+### Reading list
+
+You can check out my full reading list on Notion [here](https://ericfzhu.notion.site/12896e3b2c4141ca83ed2993432f9750?v=b37d0e3251974a59ae40bb7b84d2cc71)!

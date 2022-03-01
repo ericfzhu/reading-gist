@@ -47,7 +47,7 @@ function generateLines(books: Book[]) {
       const bar = generateBarChart(percent, barWidth);
       const percentage = `${percent}%`.padStart(4, " ");
       const length = MAX_LEN - bar.length - percentage.length - 1;
-      let text = title;
+      let text;
       if (title.length > length) {
         text = title.substring(0, length - 3).concat("...");
       } else {

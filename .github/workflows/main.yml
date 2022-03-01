@@ -2,9 +2,6 @@ name: Update gist
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
   schedule:
     - cron: "0 18 * * *" # Runs every 8 hours
 jobs:
@@ -15,7 +12,7 @@ jobs:
       - uses: actions/setup-node@v2
         with:
           node-version: "12.x"
-      - run: npm ci
+      - run: yarn install --frozen-lockfile
       - name: update-gist
         env:
           NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}

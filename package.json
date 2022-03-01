@@ -1,13 +1,10 @@
 {
-  "name": "book",
+  "name": "reading",
   "version": "1.0.0",
   "description": "Updates a reading list gist to show currently reading books on Notion",
   "main": "index.ts",
   "author": "Eric Zhu",
   "license": "MIT",
-  "engines": {
-    "node": "12.x"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node --files src/index.ts",
@@ -31,6 +28,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ericfzhu/book"
+    "url": "https://github.com/ericfzhu/reading"
   }
 }
