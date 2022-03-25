@@ -1,14 +1,15 @@
 {
   "name": "reading",
   "version": "1.0.0",
-  "description": "Updates a reading list gist to show currently reading books on Notion",
+  "description": "Updates a reading gist to show currently reading books on Notion",
   "main": "index.ts",
   "author": "Eric Zhu",
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "ts-node --files src/index.ts",
-    "start:debug": "node --inspect-brk -r ts-node/register src/index.ts"
+    "start:debug": "node --inspect-brk -r ts-node/register src/index.ts",
+    "prettier": "prettier \"./src/**/*.ts\" --write"
   },
   "dependencies": {
     "@notionhq/client": "^1.0.4",

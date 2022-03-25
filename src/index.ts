@@ -1,8 +1,8 @@
-import { generateBarChart } from "./bar";
-import { updateGist } from "./api";
+import { generateBarChart } from './bar';
+import { updateGist } from './api';
 
-const { Client } = require("@notionhq/client");
-const dotenv = require("dotenv");
+import { Client } from '@notionhq/client';
+import dotenv from 'dotenv';
 
 dotenv.config();
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
@@ -17,17 +17,17 @@ async function getBooks(): Promise<Book[]> {
     filter: {
       or: [
         {
-          property: "Status",
+          property: 'Status',
           select: {
-            equals: "Reading",
+            equals: 'Reading',
           },
         },
       ],
     },
     sorts: [
       {
-        property: "Progress",
-        direction: "descending",
+        property: 'Progress',
+        direction: 'descending',
       },
     ],
   });
@@ -45,13 +45,13 @@ function generateLines(books: Book[]) {
     .slice(0, MAX_LINES)
     .map(({ title, percent }: { title: string; percent: number }) => {
       const bar = generateBarChart(percent, barWidth);
-      const percentage = `${percent}%`.padStart(4, " ");
+      const percentage = `${percent}%`.padStart(4, ' ');
       const length = MAX_LEN - bar.length - percentage.length - 1;
       let text;
       if (title.length > length) {
-        text = title.substring(0, length - 3).concat("...");
+        text = title.substring(0, length - 3).concat('...');
       } else {
-        text = title.padEnd(length, " ");
+        text = title.padEnd(length, ' ');
       }
       return `${text} ${bar}${percentage}`;
     });
@@ -64,7 +64,7 @@ function generateLines(books: Book[]) {
     const lines = generateLines(books);
     const url = await updateGist(
       `📚 Currently reading books (${lines.length}／${books.length})`,
-      lines.join("\n")
+      lines.join('\n'),
     );
 
     console.log(`Updated: ${url}`);

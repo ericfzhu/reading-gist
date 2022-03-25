@@ -1,5 +1,5 @@
 export function generateBarChart(percent: number, size: number): string {
-  const syms = "░▏▎▍▌▋▊▉█";
+  const syms = '░▏▎▍▌▋▊▉█';
 
   const frac = Math.floor((size * 8 * percent) / 100);
   const barsFull = Math.floor(frac / 8);
@@ -9,6 +9,6 @@ export function generateBarChart(percent: number, size: number): string {
   const semi = frac % 8;
 
   return [syms.substring(8, 9).repeat(barsFull), syms.substring(semi, semi + 1)]
-    .join("")
+    .join('')
     .padEnd(size, syms.substring(0, 1));
 }
