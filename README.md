@@ -1,18 +1,11 @@
-![Notion Book Box](assets/banner.png)
-
-<h3 align="center">Updates a reading list gist to show currently reading books on Notion</h3>
-
 <p align="center">
-    <a href="https://www.javascript.com/">
-        <img src="https://img.shields.io/badge/-JavaScript-323330?logo=javascript&logoColor=F7DF1E&style=flat" alt="JavaScript"/>
-    </a>
-    <a href="https://github.com/makenotion/notion-sdk-js">
-        <img src="https://img.shields.io/badge/-Notion%20SDK-000000?logo=notion&style=flat" alt="Notion.so">
-    </a>
-    <a href="https://prettier.io/">
-        <img src="https://img.shields.io/badge/-Prettier-1A2B34?logo=prettier&style=flat" alt="Prettier.io">
-    </a>  
+    <img src="assets/logo.png" alt="icon" width="125px" />
 </p>
+<h1 align="center">
+    Reading Gist
+</h1>
+
+<h3 align="center">Updates a reading gist to show currently reading books using Notion</h3>
 
 <h4 align="center">
     This project was inspired by <a href="https://github.com/matchai/awesome-pinned-gists">awesome pinned gists</a>
