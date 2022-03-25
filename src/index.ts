@@ -1,7 +1,7 @@
 import { generateBarChart } from './bar';
 import { updateGist } from './api';
 
-import { Client } from '@notionhq/client';
+const { Client } = require("@notionhq/client");
 import dotenv from 'dotenv';
 
 dotenv.config();
