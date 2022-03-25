@@ -15,10 +15,10 @@
 
 1. Create a new public [Gist](https://gist.github.com/)
 2. Create a [personal access token](https://github.com/settings/tokens/new) with the `gist` scope
-3. Clone this repo
+3. Fork this repo by pressing the Fork button in the top right of this page or via GitHub CLI
 
 ```bash
-git clone https://github.com/ericfzhu/reading.git
+gh repo fork https://github.com/ericfzhu/reading-gist.git
 ```
 
 4. Go to Settings > Settings and add the following values:
@@ -30,12 +30,4 @@ git clone https://github.com/ericfzhu/reading.git
 
 ## Usage
 
-This project requires your Notion workspace to be a database, and contain a column called `Name` for the title of the book and a column called `Progress` for the current percentage progress in the book.
-
-### Background
-
-If you're wondering why this project seems oddly manual, that's due to the fact that Goodreads is no longer issuing new API tokens and I wanted a way to showcase what I'm currently reading. 😔
-
-### Reading list
-
-You can check out my full reading list on Notion [here](https://ericfzhu.notion.site/12896e3b2c4141ca83ed2993432f9750?v=b37d0e3251974a59ae40bb7b84d2cc71)!
+This repo requires a database page on Notion that contains a column called `Name` for the book title and a column called `Progress` for the current percentage progress in the book.
