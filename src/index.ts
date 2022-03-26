@@ -2,7 +2,7 @@ import { generateBarChart } from './bar';
 import { updateGist } from './api';
 
 const { Client } = require("@notionhq/client");
-import dotenv from 'dotenv';
+const dotenv = require('dotenv');
 
 dotenv.config();
 const notion = new Client({ auth: process.env.NOTION_API_KEY });
