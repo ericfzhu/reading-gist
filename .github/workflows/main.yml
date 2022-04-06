@@ -3,20 +3,18 @@ name: Update gist
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 18 * * *" # Runs every 8 hours
+    - cron: "0 18 * * *" # Runs every day at 18:00
 jobs:
   update-gist:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
         with:
-          node-version: "12.x"
-      - run: yarn install
+          python-version: "3.8"
       - name: update-gist
         env:
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-          NOTION_DATABASEID: ${{ secrets.NOTION_DATABASEID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
-        run: yarn start
+          GOODREADS_ID: ${{ secrets.GOODREADS_ID }}
+        run: python main.py
