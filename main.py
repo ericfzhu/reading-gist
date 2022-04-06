@@ -7,9 +7,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GOODREAD_ID = os.environ.get('GOODREAD_ID')
+GOODREADS_ID = os.environ.get('GOODREADS_ID')
 
-html = f"https://www.goodreads.com/review/list/{GOODREAD_ID}?shelf=currently-reading"
+html = f"https://www.goodreads.com/review/list/{GOODREADS_ID}?shelf=currently-reading"
 API = "https://api.github.com/gists"
 
 # Get the list of book titles from GoodReads via BeautifulSoup
