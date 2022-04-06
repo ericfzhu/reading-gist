@@ -64,7 +64,7 @@ qtconsole @ file:///opt/conda/conda-bld/qtconsole_1649078897110/work
 QtPy @ file:///opt/conda/conda-bld/qtpy_1649073884068/work
 requests==2.27.1
 Send2Trash @ file:///tmp/build/80754af9/send2trash_1632406701022/work
-sip==4.19.13
+sip==6.5.1
 six @ file:///tmp/build/80754af9/six_1644875935023/work
 soupsieve==2.3.1
 stack-data @ file:///opt/conda/conda-bld/stack_data_1646927590127/work
