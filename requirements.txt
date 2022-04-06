@@ -35,7 +35,7 @@ jupyterlab-pygments @ file:///tmp/build/80754af9/jupyterlab_pygments_16014907206
 jupyterlab-widgets @ file:///tmp/build/80754af9/jupyterlab_widgets_1609884341231/work
 MarkupSafe @ file:///C:/ci/markupsafe_1621528314575/work
 matplotlib-inline @ file:///tmp/build/80754af9/matplotlib-inline_1628242447089/work
-mistune==0.8.4
+mistune==2.0.2
 mypy-extensions==0.4.3
 nbclient @ file:///tmp/build/80754af9/nbclient_1645431659072/work
 nbconvert @ file:///C:/ci/nbconvert_1624479163777/work
