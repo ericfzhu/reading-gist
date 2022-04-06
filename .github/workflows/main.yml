@@ -13,8 +13,7 @@ jobs:
         with:
           python-version: "3.8"
         env:
-          NOTION_API_KEY: ${{ secrets.NOTION_API_KEY }}
-          NOTION_DATABASEID: ${{ secrets.NOTION_DATABASEID }}
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIST_ID: ${{ secrets.GIST_ID }}
+          GOODREADS_ID: ${{ secrets.GOODREADS_ID }}
         run: python main.py
