@@ -32,8 +32,9 @@ gh repo fork https://github.com/ericfzhu/reading-gist.git
    2. `GIST_ID`: The ID is the string of characters in the URL of the Gist you've just created
    
    ![](assets/guide3.png)
+
    3. `GOODREADS_ID`: Go to your GoodReads account and click on the currently reading section in your bookshelves.
    
    ![](assets/guide4.png)
-5. Go to Actions and press `Enable`
-6. Pin your new Gist to your profile!
+6. Go to Actions and press `Enable`
+7. Pin your new Gist to your profile!
