@@ -7,7 +7,9 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-GOODREADS_ID = os.environ.get('GOODREADS_ID')
+GOODREADS_ID = os.environ.get("GOODREADS_ID")
+GH_TOKEN = os.environ.get("GH_TOKEN")
+GIST_ID = os.environ.get("GIST_ID")
 
 html = f"https://www.goodreads.com/review/list/{GOODREADS_ID}?shelf=currently-reading"
 API = "https://api.github.com/gists"
@@ -22,12 +24,12 @@ titles = [
 CONTENT = "\n".join(titles[:5])
 
 # Get the current filename of the gist
-response = requests.get(f'{API}/{os.environ.get("GIST_ID")}')
+response = requests.get(f"{API}/{GIST_ID}")
 filename = list(response.json()["files"].keys())[0]
 
 # Updates the gist with the new filename and content
 requests.patch(
-    f"https://api.github.com/gists/{os.getenv('GIST_ID')}",
+    f"https://api.github.com/gists/{GIST_ID}",
     data=json.dumps(
         {
             "files": {
@@ -35,5 +37,5 @@ requests.patch(
             }
         }
     ),
-    headers={"Authorization": f'token {os.getenv("GH_TOKEN")}'},
+    headers={"Authorization": f"token {GH_TOKEN}"},
 )
