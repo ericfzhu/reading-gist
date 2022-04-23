@@ -33,7 +33,7 @@ requests.patch(
     data=json.dumps(
         {
             "files": {
-                filename: {"filename": "📚 Currently reading books", "content": CONTENT}
+                filename: {"filename": "📚 Currently reading...", "content": CONTENT}
             }
         }
     ),
